@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ex_1.css">
+    <script src="Ex_1.js"></script>
+</head>
+<body>
+    <h2>Calorie Counter Model</h2>
+    <!--1st Row of Foods-->
+    <div class="card-product-container container">
+        <div class="card-product">
+            <h2>Fruits</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Fruits.jpg" onclick="updateTable('Fruits', '16.851', 'Images/Fruits.jpg', '$5.67')">
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+        <div class="card-product">
+            <h2>Vegetables</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Vegetables_1.jpg" onclick="updateTable('Vegetables', '65.35', 'Images/Vegetables.jpg', '$7.5')" />
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+        <div class="card-product">
+            <h2>Spinach</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Spinach.jpg" onclick="updateTable('Spinach', '9.09', 'Images/Spinach.jpg', '$12')"/>
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+        <div class="card-product">
+            <h2>Idlies(Indian)</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Idlies.jpg" onclick="updateTable('Idly', '45.98    ', 'Images/Idlies.jpg', '$23')"/>
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+        <div class="card-product">
+            <h2>Cheese</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Cheese.jpg" onclick="updateTable('Cheese', '21.09', 'Images/Cheese.jpg', '$10.8')"/>
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+    </div>
+    <!--2nd Row of Foods-->
+    <div class="card-product-container container">
+        <div class="card-product">
+            <h2>Biscuits</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Biscuits.jpg" onclick="updateTable('Biscuits', '23.21', 'Images/Biscuits.jpg', '$8')"/>
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+        <div class="card-product">
+            <h2>Cookies</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Cookies.jpg" onclick="updateTable('Cookies', '14.98', 'Images/Cookies.jpg', '$45')"/>
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+        <div class="card-product">
+            <h2>Chips</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Chips.jpg" onclick="updateTable('Chips', '6.98', 'Images/Chips.jpg', '$12.5')"/>
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+        <div class="card-product">
+            <h2>Chocolates</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Chocolates.jpg" onclick="updateTable('Chocolates', '12.97', 'Images/Chocolates.jpg', '$2.56')"/>
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+        <div class="card-product">
+            <h2>Candies</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Candies.jpg" onclick="updateTable('Candies', '4.51', 'Images/Candies.jpg', '$4.2')"/>
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+    </div>
+    <!--3rd Row of Foods-->
+    <div class="card-product-container container">
+        <div class="card-product">
+            <h2>Milk</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Milk.jpg" onclick="updateTable('Milk', '12.89', 'Images/Milk.jpg', '$7.3')"/>
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+        <div class="card-product">
+            <h2>Tea</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Tea.jpg" onclick="updateTable('Tea', '8.3', 'Images/Tea.jpg', '$9.6')"/>
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+        <div class="card-product">
+            <h2>Bread</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Bread.jpg" onclick="updateTable('Bread', '5.9', 'Images/Bread.jpg', '$4.7')"/>
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+        <div class="card-product">
+            <h2>Ice Cream</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Ice Cream.jpg" onclick="updateTable('Ice Cream', '20.31', 'Images/Ice Cream.jpg', '$8.1')"/>
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+        <div class="card-product">
+            <h2>Cool Drinks</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Cool Drinks.jpg" onclick="updateTable('Cool Drinks', '20.31', 'Images/Cool Drinks.jpg', '$2.01')"/>
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+    </div>
+    <!--4th Row of Foods-->
+    <div class="card-product-container container">
+        <div class="card-product">
+            <h2>Mutton</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Mutton.avif" onclick="updateTable('Mutton', '20.31', 'Images/Mutton.avif', '$10.34')"/>
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+        <div class="card-product">
+            <h2>Chicken Fries</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Chicken.jpg" onclick="updateTable('Chicken', '20.31', 'Images/Chicken.jpg', '$5.01')"/>
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+        <div class="card-product">
+            <h2>Egg</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Egg.jpg" onclick="updateTable('Egg', '20.31', 'Images/Egg.jpg', '$6.78')"/>
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+        <div class="card-product">
+            <h2>Fish</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Fish.jpg" onclick="updateTable('Fish', '20.31', 'Images/Fish.jpg', '$2.89')"/>
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+        <div class="card-product">
+            <h2>Prawns</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Prawns.jpg" onclick="updateTable('Prawns', '20.31', 'Images/Prawns.jpg', '$4.23')"/>
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+    </div>
+    <!--5th Row of Foods-->
+    <div class="card-product-container container">
+        <div class="card-product">
+            <h2>Pizza</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Pizza.jpg" onclick="updateTable('Pizza', '20.31', 'Images/Pizza.jpg', '$6.34')" />
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+        <div class="card-product">
+            <h2>Burger</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Burger.jpg" onclick="updateTable('Burger', '20.31', 'Images/Burger.jpg', '$3.8')" />
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+        <div class="card-product">
+            <h2>Noodles</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Noodle.jpg" onclick="updateTable('Noodles', '20.31', 'Images/Noodle.jpg', '$3.8')" />
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+        <div class="card-product">
+            <h2>Parotta</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/Parotta.jpg" onclick="updateTable('Parotta', '9.84', 'Images/Parotta.jpg', '$23')"/>
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+        <div class="card-product">
+            <h2>French Fries</h2>
+            <div class="card-product-nested-card">
+                <div class="card-nested">
+                    <a href="#">
+                        <img src="Images/French Fries.jpg" onclick="updateTable('French Fries', '15.91', 'Images/French Fries.jpg', '$63')"/>
+                    </a>
+                    <p style="text-align: center;">
+                        <input type="text" id="veg" name="veg" value="20.31 kcal" readonly>
+                    </p>
+                </div>
+            </div>
+            <button class="card-product-btn">See more</button>
+        </div>
+    </div>
+    <table id="foodTable">
+        <tr>
+            <th>S.No</th>
+            <th>Image of the Item</th>
+            <th>Quantity</th>
+            <th>Name of the Food</th>
+            <th>Calories</th>
+            <th>Price</th>
+        </tr>
+        
+    </table>
+    <br>
+    <hr>
+    <hr>
+    <div class="color">Total Calories: <span id="totalCalories"><b>00</b></span></div>
+    <hr>
+    <hr>
+    <div class="container">
+        <label for="activity">Mention Your Activity</label> 
+        <select id="activity" name="activity" required onchange="checkActivity()">
+            <option value="1"> - - Select One - - </option>
+            <option value="Running">Running</option>
+            <option value="Cycling">Cycling</option>
+            <option value="Swimming">Swimming</option>
+            <option value="Walking">Walking</option>
+            <option value="Jogging">Jogging</option>
+        </select>
+        <br/><br/>
+        
+        <!-- Radio buttons go here -->
+            <input type="radio" id="btn" name="rad_btn" value="">
+            <a id="label_btn"></a>
+            <input type="radio" id="btn_1" name="rad_btn" value="">
+            <a id="label_btn_1"></a>
+            <br>
+            <input type="radio" id="btn_2" name="rad_btn" value="">
+            <a id="label_btn_2"></a>
+            <input type="radio" id="btn_3" name="rad_btn" value="">
+            <a id="label_btn_3"></a>
+            <br>
+    </div>
+    <h1 id="final">The Total Calories Burned out is <span id="answer"></span></h1>
+
+    <script>
+        // Get references to radio buttons and the answer span
+        var radioButtons = document.getElementsByName("rad_btn");
+        var answerSpan = document.getElementById("answer");
+    
+        // Add click event listeners to each radio button
+        radioButtons.forEach(function (radioButton) {
+            radioButton.addEventListener("click", function () {
+                // Update the total calories based on the selected radio button's value
+                updateTotalCalories();
+            });
+        });
+    
+        // Function to update total calories based on the selected radio button
+        function updateTotalCalories() {
+            var totalCalories = 0;
+    
+            // Loop through radio buttons to find the selected one
+            for (var i = 0; i < radioButtons.length; i++) {
+                if (radioButtons[i].checked) {
+                    // Add the value of the selected radio button to totalCalories
+                    totalCalories += parseInt(radioButtons[i].value, 10);
+                }
+            }
+    
+            // Update the answer span with the total calories
+            answerSpan.textContent = totalCalories;
+        }
+    </script>
+</body>
+</html>

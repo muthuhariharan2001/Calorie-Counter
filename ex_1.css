@@ -1,0 +1,108 @@
+h2{
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 10px 0 10px;
+    background-image: linear-gradient(to right, gold, hotpink);
+}
+
+.card-product-container{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-product{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 310px;
+    box-shadow: -10px -0px 20px rgba(196, 240, 240,0.5),
+    50px 50px 20px rgba(196, 240, 240,0.5);
+    padding: 10px;
+}
+.card-product h3{
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+input {
+    text-align: center;
+}
+.card-product-nested-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card-nested p{
+    margin: 5px;
+}
+.card-nested img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+    margin-left: 18px;
+}
+.card-product-btn{
+    font-size: 14px;
+    align-self: flex-start;
+    margin: 7px 10px;
+    text-decoration: none;
+    padding-left: 0;
+    background-color: transparent;
+    border:none;
+    color:rgb(25, 105, 105);
+}
+.card-product-btn:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color:crimson;
+}
+table{
+    width: 100%;
+    table-layout: fixed;
+    overflow-x: auto;
+    border: 2px solid rosybrown;
+}
+th, td{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color:#fafbfb;
+    border: solid rgb(25, 105, 105) ;
+    border-width: thin;
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-collapse: collapse;
+    border-radius: 6px;
+}
+span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    font-size: 30px;
+    font-weight: bold;
+}
+div span {
+    background-image: linear-gradient(to right, hotpink, gold);
+    color: black;
+    
+}
+.color {
+    background-color: crimson;
+    text-align: center;
+    padding: 4px;
+    border-radius: 8px;
+    margin-right: 7px;
+    color: white;
+}
+option {
+    color: white;
+    background-color: #000;
+}
